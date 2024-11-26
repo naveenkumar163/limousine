@@ -533,3 +533,50 @@ body {
     }
 }
 
+.fleet-link {
+    color: #2563eb; /* text-blue-600 */
+    font-size: 1rem; /* text-xl */
+    padding: 1px 3px; /* py-2 px-4 */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.fleet-link:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.testimonials-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonials-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-slide {
+    width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.testimonial-content {
+    padding: 2rem;
+    min-height: 300px; /* Increased height for more content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dot.active {
+    background-color: #2563eb;
+}
+
+.pattern-dots {
+    background-image: radial-gradient(#2563eb 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
