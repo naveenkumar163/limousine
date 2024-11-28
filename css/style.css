@@ -790,3 +790,22 @@ body {
     color: white;
 }
 
+/* Contact Cards Hover Effect */
+.contact-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Container Animation */
+.contact-icon-container {
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-icon-container {
+    transform: scale(1.1);
+}
+
