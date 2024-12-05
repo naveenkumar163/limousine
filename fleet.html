@@ -38,8 +38,7 @@
             <div class="desktop-nav">
                 <a href="about.html" class="nav-link">About</a>
                 <div class="nav-item">
-                    <a href="#" class="nav-link dropdown-trigger">Services <i
-                            class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-menu">
                         <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
                         <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
@@ -1029,6 +1028,22 @@
     </footer>
 
     <!-- Custom JavaScript -->
+
+    <script>
+        function toggleFAQ(button) {
+            // Toggle the plus/minus icon
+            const icon = button.querySelector('i');
+            icon.classList.toggle('fa-plus');
+            icon.classList.toggle('fa-minus');
+            icon.classList.toggle('rotate-45');
+
+            // Toggle the content visibility
+            const content = button.nextElementSibling;
+            content.classList.toggle('hidden');
+            content.classList.toggle('show');
+        }
+    </script>
+
     <script src="js/main.js"></script>
 
 </body>
