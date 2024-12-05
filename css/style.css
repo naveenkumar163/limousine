@@ -1138,8 +1138,29 @@ body {
 .hidden {
     display: none;
 }
-
 .visible {
+    display: block;
+}
+
+.step-trigger {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.step-trigger:hover {
+    color: #2563eb;
+}
+
+.step-trigger.active {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.form-step {
+    display: none;
+}
+
+#step1 {
     display: block;
 }
 
