@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet - Top Link Limo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <div class="top-header">
+        <div class="container">
+            <div class="logo">
+                <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
+                <a href="index.html">Top Link Limo</a>
+            </div>
+            <div class="contact-section">
+                <a href="https://wa.me/1234567890" class="contact-button whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Booking</span>
+                </a>
+                <a href="tel:1234567890" class="contact-button phone">
+                    <i class="fas fa-phone"></i>
+                    <span>1-234-567-890</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="desktop-nav">
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-item">
+                    <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
+                        <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
+                        <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
+                        <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
+                    </div>
+                </div>
+                <a href="quote.html" class="nav-link">Rates</a>
+                <a href="fleet.html" class="nav-link">Fleet </a>
+                <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
+                <a href="quote.html" class="nav-link">Get a Quote</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu-container" class="mobile-menu-container">
+            <div class="mobile-nav">
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <div class="mobile-nav-item">
+                    <button class="mobile-dropdown-trigger">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu">
+                        <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
+                        <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
+                        <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
+                        <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
+                    </div>
+                </div>
+                <a href="quote.html" class="mobile-nav-link">Rates</a>
+                <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+                <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
+                <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fleet Hero Section -->
+    <section class="relative bg-gradient-to-r from-[#072f5f] to-[#0a4487] text-white py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="text-blue-400 uppercase tracking-wider font-semibold">Our Luxury Fleet</span>
+                <h1 class="text-5xl font-bold mt-4 mb-6">Experience Luxury in Motion</h1>
+                <p class="text-xl text-gray-300">Choose from our diverse collection of meticulously maintained luxury
+                    vehicles, each offering unparalleled comfort and style.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="py-16">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-center mb-8">Our Luxurious Fleet</h1>
+
+            <!-- Category Navigation -->
+            <div class="flex justify-center items-center flex-wrap gap-4 mb-16">
+                <button class="fleet-category-btn active" data-category="all">ALL</button>
+                <button class="fleet-category-btn" data-category="sedan">SEDAN</button>
+                <button class="fleet-category-btn" data-category="suv">SUV</button>
+                <button class="fleet-category-btn" data-category="van">VAN</button>
+                <button class="fleet-category-btn" data-category="limo">LIMO</button>
+                <button class="fleet-category-btn" data-category="bus">BUS</button>
+            </div>
+
+            <!-- Fleet Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Lexus ES -->
+                <div class="fleet-card" data-category="sedan">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/Lexus-ES-250.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">Sedan</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Lexus ES</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>3</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fleet-card" data-category="sedan">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/03-Pass-MKT.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">Sedan</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Lincoln MKT</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>3</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fleet-card" data-category="sedan">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/03-Pass-Town-Car.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">Sedan</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Town Car</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>3</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lincoln Navigator -->
+                <div class="fleet-card" data-category="suv">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/cc_2021LIS040048.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">SUV</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Lincoln Navigator</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>7</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>5</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expedition SUV -->
+                <div class="fleet-card" data-category="suv">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/06-Pass-Expedition-SUV.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">SUV</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Expedition SUV</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>7</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>3</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ford Van -->
+                <div class="fleet-card" data-category="van">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/14-Pass-Ford-Van.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">VAN</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Ford Van</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>12</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>6</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercedes Sprinter Van -->
+                <div class="fleet-card" data-category="van">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/14-Pass-Sprinter-Exclusive-Limo.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">VAN</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Mercedes Sprinter Van</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>12</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>6</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lincoln Stretch Limo -->
+                <div class="fleet-card" data-category="limo">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/10-Pass-Stretch.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">LIMO</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Lincoln Stretch Limo</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>8</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>6</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MKT Stretch Limo -->
+                <div class="fleet-card" data-category="limo">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/14-Pass-MKT-Stretch.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">LIMO</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">MKT Stretch Limo</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>8</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>6</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hummer Limo -->
+                <div class="fleet-card" data-category="limo">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/14-Pass-Hummer-Limo-1.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">LIMO</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Hummer Limo</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>8</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>6</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Party Bus -->
+                <div class="fleet-card" data-category="bus">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/22-Pass-Party-Bus.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">BUS</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Party Bus</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>30</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>8</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Party Bus -->
+                <div class="fleet-card" data-category="bus">
+                    <div class="fleet-image-wrapper">
+                        <img src="images/24-Pass-Limo-Bus.webp" alt="Lexus ES" class="fleet-image">
+                        <div class="fleet-category-badge">BUS</div>
+                    </div>
+                    <div class="fleet-content">
+                        <h3 class="fleet-title">Party Bus</h3>
+                        <div class="fleet-specs-container">
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-door-closed fleet-spec-icon"></i>
+                                    <span>CAR DOORS:</span>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-users fleet-spec-icon"></i>
+                                    <span>PASSENGERS:</span>
+                                </div>
+                                <span>30</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-suitcase fleet-spec-icon"></i>
+                                    <span>LUGGAGE CARRY:</span>
+                                </div>
+                                <span>8</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-temperature-high fleet-spec-icon"></i>
+                                    <span>HEATED SEATS:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wind fleet-spec-icon"></i>
+                                    <span>AIR CONDITION:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                            <div class="fleet-spec-row">
+                                <div class="fleet-spec-label">
+                                    <i class="fas fa-wifi fleet-spec-icon"></i>
+                                    <span>ONE BOARD WIFI:</span>
+                                </div>
+                                <span>yes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Continue with all other vehicles... -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FAQ Section -->
+    <section class="relative py-16 bg-gradient-to-br from-[#072f5f] to-[#1a4980]">
+        <!-- Decorative pattern overlay -->
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%221%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <h2 class="text-3xl font-bold text-center mb-4 text-white">Frequently Asked Questions</h2>
+            <p class="text-center text-gray-300 mb-12">Find answers to common questions about our services</p>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">Is there a company that will drive you to the
+                                airport in Toronto?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Yes, pearsongtalimo is one of the top companies providing professional airport
+                                transportation services to and from Toronto’s major airports – Toronto Pearson
+                                International (YYZ) and Billy Bishop Toronto City Airport (YTZ). They offer late-model
+                                luxury vehicles like sedans, SUVs and limousines chauffeured by professional drivers.
+                                pearsongtalimo allows convenient online booking and quoting for efficient airport
+                                transfers or hourly as-directed service.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">Is there a shuttle to Toronto Airport?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Both Toronto Pearson and Billy Bishop Airport have shuttle bus services, though many
+                                travelers prefer the comfort and convenience of a private car service like
+                                pearsongtalimo. Their vehicles eliminate the need to navigate crowded shuttles with
+                                luggage. pearsongtalimo chauffeurs will be waiting to greet you at arrival doors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">What city is Billy Bishop Airport?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Billy Bishop Toronto City Airport (YTZ) is located right in Toronto, on the Toronto
+                                Islands just a short 121-meter ferry crossing from downtown. Despite its convenient
+                                location, many travelers still opt for the luxury and hassle-free transportation
+                                provided by companies like pearsongtalimo to easily get to/from this regional airport.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">What is the airport code for Toronto Canada?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                The primary airport code for Toronto is YYZ, for Toronto Pearson International Airport.
+                                The smaller Billy Bishop Airport uses YTZ. When booking travel to Toronto, use the
+                                airport code YYZ unless your itinerary specifically routes through Billy Bishop (YTZ).
+                                Many travelers book pearsongtalimo for transportation either airport.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with other FAQ items using the same structure... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Safety Feature -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Safety First</h3>
+                    <p class="text-gray-600">Regular maintenance and safety checks for all vehicles, ensuring your peace
+                        of mind during every journey.</p>
+                </div>
+
+                <!-- Trust Feature -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Trusted Service</h3>
+                    <p class="text-gray-600">Professional, licensed chauffeurs with years of experience and exceptional
+                        customer service ratings.</p>
+                </div>
+
+                <!-- Availability Feature -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">24/7 Availability</h3>
+                    <p class="text-gray-600">Round-the-clock service with flexible booking options to accommodate your
+                        schedule any time, any day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Background Pattern -->
+        <div class="footer-pattern"></div>
+
+        <div class="container relative">
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <img src="images/logo-white.png" alt="Toplink Limo Logo" class="footer-logo">
+                    <p class="footer-description">Experience luxury transportation with unmatched professionalism across
+                        Toronto and the GTA.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-services-list">
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Airport
+                                Transfers</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Corporate
+                                Travel</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Wedding
+                                Limo</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Wine
+                                Tours</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Special
+                                Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Our Location</h5>
+                                    <p class="contact-text">123 Business Ave, Toronto, ON M5V 2T6</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone-alt text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Call Us 24/7</h5>
+                                    <a href="tel:1-234-567-890" class="contact-link">1-234-567-890</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Email Us</h5>
+                                    <a href="mailto:info@toplink.com" class="contact-link">info@toplink.com</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Business Hours -->
+                <div>
+                    <h4 class="footer-heading">Business Hours</h4>
+                    <ul class="hours-list">
+                        <li class="hours-item"><span>Monday - Friday:</span><span>24 Hours</span></li>
+                        <li class="hours-item"><span>Saturday:</span><span>24 Hours</span></li>
+                        <li class="hours-item"><span>Sunday:</span><span>24 Hours</span></li>
+                    </ul>
+                    <div class="hours-note">
+                        <p>Available for bookings 24/7, 365 days a year</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 Toplink Limo Services. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" class="bottom-link">Privacy Policy</a>
+                        <a href="#" class="bottom-link">Terms of Service</a>
+                        <a href="#" class="bottom-link">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+
+    <script>
+        function toggleFAQ(button) {
+            // Toggle the plus/minus icon
+            const icon = button.querySelector('i');
+            icon.classList.toggle('fa-plus');
+            icon.classList.toggle('fa-minus');
+            icon.classList.toggle('rotate-45');
+
+            // Toggle the content visibility
+            const content = button.nextElementSibling;
+            content.classList.toggle('hidden');
+            content.classList.toggle('show');
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

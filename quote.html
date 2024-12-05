@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - Top Link Limo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <div class="top-header">
+        <div class="container">
+            <div class="logo">
+                <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
+                <a href="index.html">Top Link Limo</a>
+            </div>
+            <div class="contact-section">
+                <a href="https://wa.me/1234567890" class="contact-button whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Booking</span>
+                </a>
+                <a href="tel:1234567890" class="contact-button phone">
+                    <i class="fas fa-phone"></i>
+                    <span>1-234-567-890</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="desktop-nav">
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-item">
+                    <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
+                        <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
+                        <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
+                        <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
+                    </div>
+                </div>
+                <a href="quote.html" class="nav-link">Rates</a>
+                <a href="fleet.html" class="nav-link">Fleet </a>
+                <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
+                <a href="quote.html" class="nav-link">Get a Quote</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu-container" class="mobile-menu-container">
+            <div class="mobile-nav">
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <div class="mobile-nav-item">
+                    <button class="mobile-dropdown-trigger">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu">
+                        <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
+                        <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
+                        <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
+                        <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
+                    </div>
+                </div>
+                <a href="quote.html" class="mobile-nav-link">Rates</a>
+                <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+                <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
+                <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative text-black py-20">
+        <div class="container max-w-6xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Get Your Custom Quote</h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Experience luxury transportation tailored to your needs. Fill out our quick quote form below and let
+                    us create the perfect journey for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="py-16 bg-gradient-to-br from-gray-900 to-blue-900">
+        <div class="container max-w-6xl mx-auto px-4">
+            <!-- Two-column layout for larger screens -->
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Left Column - Info & Benefits -->
+                <div class="lg:w-1/3 text-white">
+                    <h1 class="text-4xl font-bold mb-6">Request Your Quote</h1>
+                    <p class="text-gray-300 mb-8">Get an instant quote for your luxury transportation needs</p>
+
+                    <!-- Benefits Cards -->
+                    <div class="space-y-4">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition">
+                            <i class="fas fa-clock text-blue-400 text-xl mb-2"></i>
+                            <h3 class="font-semibold mb-1">24/7 Service</h3>
+                            <p class="text-sm text-gray-300">Available round the clock for your convenience</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition">
+                            <i class="fas fa-shield-alt text-blue-400 text-xl mb-2"></i>
+                            <h3 class="font-semibold mb-1">Fixed Pricing</h3>
+                            <p class="text-sm text-gray-300">No hidden fees or surprise charges</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition">
+                            <i class="fas fa-car-side text-blue-400 text-xl mb-2"></i>
+                            <h3 class="font-semibold mb-1">Luxury Fleet</h3>
+                            <p class="text-sm text-gray-300">Premium vehicles for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Multi-Step Form -->
+                <div class="lg:w-2/3">
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                        <!-- Progress Steps -->
+                        <div class="flex border-b">
+                            <div class="w-1/3 py-4 px-6 text-center cursor-pointer step-trigger" data-step="1">
+                                1. Trip Details
+                            </div>
+                            <div class="w-1/3 py-4 px-6 text-center cursor-pointer step-trigger" data-step="2">
+                                2. Vehicle
+                            </div>
+                            <div class="w-1/3 py-4 px-6 text-center cursor-pointer step-trigger" data-step="3">
+                                3. Contact Info
+                            </div>
+                        </div>
+
+                        <!-- Form Steps -->
+                        <div id="step1" class="form-step">
+                            <form class="space-y-6 p-8">
+                                <!-- Trip Type Selection -->
+                                <div class="flex gap-4">
+                                    <div class="flex-1 cursor-pointer">
+                                        <input type="radio" name="tripType" id="oneWay" class="hidden peer">
+                                        <label for="oneWay"
+                                            class="block text-center p-4 rounded-xl border-2 peer-checked:border-blue-600 peer-checked:bg-blue-50 hover:bg-gray-50 transition">
+                                            <i class="fas fa-arrow-right text-2xl mb-2 text-blue-600"></i>
+                                            <div class="font-medium">One Way</div>
+                                        </label>
+                                    </div>
+                                    <div class="flex-1 cursor-pointer">
+                                        <input type="radio" name="tripType" id="roundTrip" class="hidden peer">
+                                        <label for="roundTrip"
+                                            class="block text-center p-4 rounded-xl border-2 peer-checked:border-blue-600 peer-checked:bg-blue-50 hover:bg-gray-50 transition">
+                                            <i class="fas fa-exchange-alt text-2xl mb-2 text-blue-600"></i>
+                                            <div class="font-medium">Round Trip</div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Location Fields -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="relative">
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Pick-up
+                                            Location</label>
+                                        <div class="relative">
+                                            <i
+                                                class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                            <input type="text"
+                                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                    <div class="relative">
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Drop-off
+                                            Location</label>
+                                        <div class="relative">
+                                            <i
+                                                class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                            <input type="text"
+                                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Date & Time -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Date</label>
+                                        <div class="relative">
+                                            <i
+                                                class="far fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                            <input type="date"
+                                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Time</label>
+                                        <div class="relative">
+                                            <i
+                                                class="far fa-clock absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                            <input type="time"
+                                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Navigation Buttons -->
+                                <div class="flex justify-end pt-6">
+                                    <button type="button"
+                                        class="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-medium flex items-center gap-2">
+                                        Next Step
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="step2" class="form-step">
+                            <form class="space-y-6 p-8">
+                                <!-- Vehicle Type Cards -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="cursor-pointer">
+                                        <input type="radio" name="vehicleType" id="sedan" class="hidden peer">
+                                        <label for="sedan"
+                                            class="block p-4 rounded-xl border-2 peer-checked:border-blue-600 peer-checked:bg-blue-50 hover:bg-gray-50 transition">
+                                            <div class="flex items-center gap-4">
+                                                <i class="fas fa-car text-3xl text-blue-600"></i>
+                                                <div>
+                                                    <div class="font-medium text-lg">Luxury Sedan</div>
+                                                    <p class="text-sm text-gray-600">Up to 3 passengers</p>
+                                                    <p class="text-sm text-blue-600 font-medium mt-1">From $75/hour</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- Repeat for other vehicle types -->
+                                    <div class="cursor-pointer">
+                                        <input type="radio" name="vehicleType" id="suv" class="hidden peer">
+                                        <label for="suv"
+                                            class="block p-4 rounded-xl border-2 peer-checked:border-blue-600 peer-checked:bg-blue-50 hover:bg-gray-50 transition">
+                                            <div class="flex items-center gap-4">
+                                                <i class="fas fa-car-side text-3xl text-blue-600"></i>
+                                                <div>
+                                                    <div class="font-medium text-lg">Luxury SUV</div>
+                                                    <p class="text-sm text-gray-600">Up to 6 passengers</p>
+                                                    <p class="text-sm text-blue-600 font-medium mt-1">From $95/hour</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Additional Requirements -->
+                                <div class="space-y-4 mt-8">
+                                    <h3 class="text-lg font-medium text-gray-900">Additional Requirements</h3>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="text-sm font-medium text-gray-700 mb-2 block">Number of
+                                                Passengers</label>
+                                            <input type="number" min="1"
+                                                class="w-full pl-4 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                        <div>
+                                            <label class="text-sm font-medium text-gray-700 mb-2 block">Number of
+                                                Luggage</label>
+                                            <input type="number" min="0"
+                                                class="w-full pl-4 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Navigation Buttons -->
+                                <div class="flex justify-between pt-6">
+                                    <button type="button"
+                                        class="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium flex items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="button"
+                                        class="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-medium flex items-center gap-2">
+                                        Next Step
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="step3" class="form-step">
+                            <form class="space-y-6 p-8">
+                                <!-- Personal Information -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">First Name</label>
+                                        <input type="text"
+                                            class="w-full pl-4 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                    </div>
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Last Name</label>
+                                        <input type="text"
+                                            class="w-full pl-4 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                    </div>
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Email
+                                            Address</label>
+                                        <div class="relative">
+                                            <i
+                                                class="far fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                            <input type="email"
+                                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="text-sm font-medium text-gray-700 mb-2 block">Phone Number</label>
+                                        <div class="relative">
+                                            <i
+                                                class="fas fa-phone absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                            <input type="tel"
+                                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Special Requirements -->
+                                <div>
+                                    <label class="text-sm font-medium text-gray-700 mb-2 block">Special
+                                        Requirements</label>
+                                    <textarea rows="4"
+                                        class="w-full pl-4 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition"
+                                        placeholder="Any special requests or requirements..."></textarea>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="space-y-4">
+                                    <label class="flex items-start gap-3 cursor-pointer group">
+                                        <input type="checkbox" class="mt-1 text-blue-600 focus:ring-blue-500">
+                                        <span class="text-sm text-gray-600 group-hover:text-gray-900">
+                                            I agree to the <a href="#" class="text-blue-600 hover:underline">Terms and
+                                                Conditions</a> and
+                                            <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <!-- Navigation Buttons -->
+                                <div class="flex justify-between pt-6">
+                                    <button type="button"
+                                        class="px-8 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-all duration-300 font-medium flex items-center gap-2">
+                                        <i class="fas fa-arrow-left"></i>
+                                        Previous
+                                    </button>
+                                    <button type="submit"
+                                        class="px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 font-medium flex items-center gap-2">
+                                        Submit Request
+                                        <i class="fas fa-check"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-xl font-bold text-blue-600 mb-2">GOOGLE REVIEWS</h2>
+                <h3 class="text-4xl font-bold mb-4">What Our Customers Say</h3>
+                <div class="flex items-center justify-center gap-4 mb-6">
+                    <div class="flex items-center">
+                        <div class="text-yellow-400 text-3xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-2xl font-bold">4.9</span>
+                    </div>
+                    <div class="text-gray-600">
+                        Based on 200+ reviews
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Reviews Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://ui-avatars.com/api/?name=John+Smith&background=random" alt="John Smith"
+                            class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">John Smith</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Exceptional service! The chauffeur was punctual, professional, and the
+                        vehicle was immaculate. Will definitely use again for all my luxury transportation needs."</p>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=random" alt="Sarah Johnson"
+                            class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Used their service for my wedding and it was perfect! The driver was so
+                        accommodating and made sure everything went smoothly. Highly recommend!"</p>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://ui-avatars.com/api/?name=Michael+Brown&background=random" alt="Michael Brown"
+                            class="w-12 h-12 rounded-full">
+                        <div class="ml-4">
+                            <h4 class="font-bold">Michael Brown</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Top-notch airport transfer service. The driver tracked my flight and was
+                        waiting when I arrived despite the delay. Excellent communication and service."</p>
+                </div>
+            </div>
+
+            <!-- Google Review Button -->
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center gap-2 bg-white text-gray-800 font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <!-- <img src="images/google-icon.png" alt="Google" class="w-6 h-6"> -->
+                    Read More Reviews on Google
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Background Pattern -->
+        <div class="footer-pattern"></div>
+
+        <div class="container relative">
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <img src="images/logo-white.png" alt="Toplink Limo Logo" class="footer-logo">
+                    <p class="footer-description">Experience luxury transportation with unmatched professionalism across
+                        Toronto and the GTA.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-services-list">
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Airport
+                                Transfers</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Corporate
+                                Travel</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Wedding
+                                Limo</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Wine
+                                Tours</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Special
+                                Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Our Location</h5>
+                                    <p class="contact-text">123 Business Ave, Toronto, ON M5V 2T6</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone-alt text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Call Us 24/7</h5>
+                                    <a href="tel:1-234-567-890" class="contact-link">1-234-567-890</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Email Us</h5>
+                                    <a href="mailto:info@toplink.com" class="contact-link">info@toplink.com</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Business Hours -->
+                <div>
+                    <h4 class="footer-heading">Business Hours</h4>
+                    <ul class="hours-list">
+                        <li class="hours-item"><span>Monday - Friday:</span><span>24 Hours</span></li>
+                        <li class="hours-item"><span>Saturday:</span><span>24 Hours</span></li>
+                        <li class="hours-item"><span>Sunday:</span><span>24 Hours</span></li>
+                    </ul>
+                    <div class="hours-note">
+                        <p>Available for bookings 24/7, 365 days a year</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 Toplink Limo Services. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" class="bottom-link">Privacy Policy</a>
+                        <a href="#" class="bottom-link">Terms of Service</a>
+                        <a href="#" class="bottom-link">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

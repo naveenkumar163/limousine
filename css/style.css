@@ -43,18 +43,133 @@ body {
 
 /* Fleet Cards */
 .fleet-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.fleet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.fleet-image-wrapper {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    height: 220px;
 }
 
-.fleet-card img {
-    transition: transform 0.3s ease;
+.fleet-image {
+    width: auto;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
 }
 
-.fleet-card:hover img {
+.fleet-image:hover {
     transform: scale(1.05);
+}
+
+.fleet-category-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #0b488e;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.fleet-content {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.fleet-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.fleet-specs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.fleet-spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.fleet-spec-row:last-child {
+    border-bottom: none;
+}
+
+.fleet-spec-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fleet-spec-icon {
+    color: #0b488e;
+}
+
+/* Category Navigation */
+.fleet-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.fleet-category-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #072f5f;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.fleet-category-btn:hover {
+    background-color: #072f5f;
+    color: white;
+}
+
+.fleet-category-btn.active {
+    background-color: #072f5f;
+    color: white;
+}
+
+/* Fleet Grid Layout */
+.fleet-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .fleet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .fleet-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Contact Form */
@@ -807,5 +922,224 @@ body {
 
 .contact-card:hover .contact-icon-container {
     transform: scale(1.1);
+}
+
+/* Fleet Page Styles */
+.fleet-category-btn {
+    @apply px-6 py-2 rounded-full font-semibold transition-colors;
+    /* background-color: #1a1a1a;
+    color: white; */
+}
+
+.fleet-category-btn.active {
+    @apply bg-red-600;
+}
+
+.fleet-category-btn:hover {
+    @apply bg-red-600;
+}
+
+.fleet-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+}
+
+/* Add hover effect for fleet cards */
+.fleet-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect for fleet cards */
+.fleet-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Existing styles remain... */
+
+/* FAQ Section Styles */
+.faq-content {
+    transition: all 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq-content.show {
+    max-height: 500px;
+}
+
+/* Icon Rotation */
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Transition for the chevron icon */
+.fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+/* Glass morphism effect for FAQ cards */
+.bg-white\/95 {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+}
+
+/* Additional FAQ Styles */
+.faq-button {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.faq-icon {
+    color: #2563eb;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+/* FAQ Card Hover Effects */
+.faq-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Section Background */
+.faq-section {
+    background: linear-gradient(to bottom right, #072f5f, #1a4980);
+    position: relative;
+    overflow: hidden;
+}
+
+/* FAQ Pattern Overlay */
+.faq-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* FAQ Typography */
+.faq-title {
+    color: white;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.faq-subtitle {
+    color: #D1D5DB;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* FAQ Item Spacing */
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+/* FAQ Content Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-content.show {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+/* FAQ Question Hover State */
+.faq-question {
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #2563eb;
+}
+
+/* FAQ Icon Container */
+.faq-icon-container {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    background-color: #EFF6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* FAQ Divider */
+.faq-divider {
+    height: 1px;
+    background-color: #E5E7EB;
+    margin: 0.5rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 0 0.5rem;
+    }
+
+    .faq-title {
+        font-size: 1.5rem;
+    }
+
+    .faq-button {
+        padding: 1rem;
+    }
+
+    .faq-answer {
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
 

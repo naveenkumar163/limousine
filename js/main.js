@@ -90,4 +90,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Start the automatic slideshow
     startAutoSlide();
+
+    function toggleFAQ(button) {
+        // Get the FAQ content element that follows the button
+        const faqContent = button.nextElementSibling;
+        
+        // Toggle the visibility of the FAQ content
+        faqContent.classList.toggle('hidden');
+        faqContent.classList.toggle('show');
+        
+        // Add rotation animation to the icon
+        const icon = button.querySelector('i.fa-chevron-down');
+        if (icon) {
+            icon.classList.toggle('rotate-180');
+        }
+    }
+
+    // Add event listener when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add chevron icons to all FAQ buttons
+        const faqButtons = document.querySelectorAll('.faq-content').previousElementSibling;
+        faqButtons.forEach(button => {
+            const buttonContent = button.querySelector('.flex.items-center.gap-4');
+            if (buttonContent) {
+                const chevron = document.createElement('i');
+                chevron.className = 'fas fa-chevron-down transition-transform duration-300';
+                button.appendChild(chevron);
+            }
+        });
+    });
 });

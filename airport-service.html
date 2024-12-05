@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Link Limo - Professional Limousine Service</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <div class="top-header">
+        <div class="container">
+            <div class="logo">
+                <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
+                <a href="index.html">Top Link Limo</a>
+            </div>
+            <div class="contact-section">
+                <a href="https://wa.me/1234567890" class="contact-button whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp Booking</span>
+                </a>
+                <a href="tel:1234567890" class="contact-button phone">
+                    <i class="fas fa-phone"></i>
+                    <span>1-234-567-890</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="desktop-nav">
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-item">
+                    <a href="#services" class="nav-link dropdown-trigger">Services <i
+                            class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
+                        <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
+                        <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
+                        <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
+                    </div>
+                </div>
+                <a href="quote.html" class="nav-link">Rates</a>
+                <a href="fleet.html" class="nav-link">Fleet </a>
+                <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
+                <a href="quote.html" class="nav-link">Get a Quote</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu-container" class="mobile-menu-container">
+            <div class="mobile-nav">
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <div class="mobile-nav-item">
+                    <button class="mobile-dropdown-trigger">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu">
+                        <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
+                        <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
+                        <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
+                        <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
+                    </div>
+                </div>
+                <a href="quote.html" class="mobile-nav-link">Rates</a>
+                <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+                <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
+                <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative text-black py-20">
+        <div class="container max-w-6xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Airport service</h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Experience luxury transportation tailored to your needs. Fill out our quick quote form below and let
+                    us create the perfect journey for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-16 bg-gradient-to-br from-gray-900 to-blue-900">
+        <div class="container max-w-6xl mx-auto px-4">
+            <!-- Two-column layout for larger screens -->
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Left Column - Info & Benefits -->
+                <div class="lg:w-1/2 text-white">
+                    <h2 class="text-4xl font-bold mb-6">Pearson GTA Limo: Leading Airport Limo Service Toronto</h2>
+                    <p class="text-gray-300 mb-8">If you’re looking for the ultimate in comfort and convenience when
+                        traveling to or from Toronto’s airports, look no further than the leading airport limo service
+                        in the city. Known for its top-notch luxury vehicles, professional drivers, and exceptional
+                        service, this limo service ensures that your airport experience is seamless from start to
+                        finish. Whether you’re catching an early flight or arriving late at night, you can rely on them
+                        to get you to your destination on time and in style. With a fleet of well-maintained, high-end
+                        vehicles and a commitment to punctuality, this service is the go-to choice for travelers who
+                        expect nothing less than the best. From business trips to vacations, it offers a stress-free,
+                        comfortable ride that lets you start or end your journey on the right note.</p>
+                </div>
+
+                <!-- Right Column - Form -->
+                <div class="lg:w-1/2">
+                    <form class="bg-white rounded-2xl shadow-2xl p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Service Type -->
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Service Type</label>
+                                <select
+                                    class="w-full p-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                                    <option value="" disabled selected>Select your service</option>
+                                    <option value="airport">Airport Transfer</option>
+                                    <option value="hourly">Hourly Service</option>
+                                    <option value="corporate">Corporate Service</option>
+                                    <option value="private">Private Car Service</option>
+                                </select>
+                            </div>
+
+                            <!-- Name -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text"
+                                    class="w-full p-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <div class="relative">
+                                    <i
+                                        class="far fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                    <input type="email"
+                                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                </div>
+                            </div>
+
+                            <!-- Pickup -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Pickup Location</label>
+                                <div class="relative">
+                                    <i
+                                        class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                    <input type="text"
+                                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                </div>
+                            </div>
+
+                            <!-- Dropoff -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Dropoff Location</label>
+                                <div class="relative">
+                                    <i
+                                        class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                                    <input type="text"
+                                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Special Instructions</label>
+                                <textarea rows="1"
+                                    class="w-full p-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="mt-6">
+                            <button type="submit"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                                Get Instant Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="container flex flex-col items-center">
+            <h2 class="text-4xl font-bold mb-6 text-center">Premier Airport Transfer Service: Luxury in Motion</h2>
+            <p class="text-center">Welcome to our Airport Transfers Service! We specialize in hassle-free rides to and
+                from Pearson Airport,
+                offering a fleet of luxurious vehicles including Mercedes Benz, Lincoln MKT, Town Car, Cadillac SUV,
+                Expedition SUV, Chevrolet Suburban, Ford Van, Mercedes Sprinter Van, Lincoln Stretch Limo, Hummer Limo,
+                MKT Stretch Limo, and Party Bus. With our reliable and comfortable transportation options, you can relax
+                knowing you’ll arrive on time, every time. Let us take the stress out of airport travel for you!</p>
+
+            <div class="my-5">
+                <a href="reservation.html"
+                    class="bg-blue-600 mx-3 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">Online
+                    reservation</a>
+                <a href="tel:1234567890"
+                    class="bg-blue-600 mx-3 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">Call
+                    Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container ">
+            <div class="relative">
+                <h2 class="text-4xl font-bold mb-6 text-center ">Reliable Airport Transfers: Your Stress-Free Option
+                </h2>
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5">
+                    <div class="w-full h-full border-t-2 border-dashed border-gray-300"></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-5 my-10 bg-white p-5 rounded">
+                <div class="col-span-8">
+                    <h3 class="text-3xl font-bold mb-6 text-center">We are the Most Trusted Option for Your Airport
+                        Transfers</h2>
+                        <p class="mb-3">When choosing an airport limo service, Pearson GTA Limo is your most trusted
+                            option. We have massive fleet options designed to meet all of your transportation needs.
+                            With a fleet of 165 luxury vehicles, we have provided comfortable and convenient airport
+                            transfer services for over 10 years. We also have wheelchair-accessible vans with highly
+                            trained and certified drivers to service our special needs clients. We provide quick,
+                            dependable, and comfortable airport transfer service to anf from all international and
+                            domestic airports. Simplify your travel arrangements with Pearson GTA Limo’s convenient
+                            Online Booking service. Our user-friendly online booking service lets you schedule an
+                            airport limo with just a few taps. Designed for efficiency and ease, this platform allows
+                            users to effortlessly secure transportation for various needs, including airport transfers,
+                            limousine services, and hourly chauffeur service. </p>
+                        <p class="mb-3">Each vehicle in our fleet can comfortably accommodate four passengers and a
+                            moderate amount of luggage. Sit and relax in our comfortable limousines and leave the rest
+                            to us. No matter which date or time you need us, we’ll be there to help you with your
+                            airport limo transportation. We guarantee on-time airport pickup and drop-off, with a
+                            comfortable and luxurious travel experience. There is no need to hail a taxi on the busy
+                            city streets, especially when you’re in a hurry to catch your flight. Pre-book your airport
+                            transfer service and travel in style.</p>
+                </div>
+                <div class="col-span-4">
+                    <img src="images\airport-transfer-service-1.png" alt="Airport Transfer"
+                        class="w-full h-full object-obtain">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-10 my-10 bg-white p-5 rounded">
+                <div class="col-span-5">
+                    <img src="images\airport-transfer-service-1.png" alt="Airport Transfer"
+                        class="w-full h-full object-obtain">
+                </div>
+                <div class="col-span-7">
+                    <h3 class="text-3xl font-bold mb-6 text-center">Your Airport Transportation Expectation is Our
+                        Priority</h3>
+                    <p class="mb-3">Every time someone books a limo service or an airport transfer service, he expects
+                        that they will have a new experience that will be quite better than before. Sometimes, they have
+                        to accept the chance or experience that they receive from the service, and this sometimes
+                        becomes part of their hectic schedule. They try to evade these types of experiences from their
+                        coming experiences and try to contact those service providers whom they find reliable.</p>
+                    <p class="mb-3">Each vehicle in our fleet can comfortably accommodate four passengers and a
+                        moderate amount of luggage. Sit and relax in our comfortable limousines and leave the rest
+                        to us. No matter which date or time you need us, we’ll be there to help you with your
+                        airport limo transportation. We guarantee on-time airport pickup and drop-off, with a
+                        comfortable and luxurious travel experience. There is no need to hail a taxi on the busy
+                        city streets, especially when you’re in a hurry to catch your flight. Pre-book your airport
+                        transfer service and travel in style.</p>
+
+                    <p class="mb-3">But our Airport transfer service has now been a source of relaxation and an
+                        unstressed journey for those types of customers that demand nothing except for the privacy and
+                        delightful journey that could add to the memories. Like our other services, such as private car
+                        service and Corporate Car service, this Airport Transfer Service has always prioritized the high
+                        expectations of the customers to achieve their trust and reliability of the customers through
+                        the durability and luxury being provided to them.</p>
+
+                    <p class="mb-3">For international travelers, our airport transfer service transcends borders. We
+                        understand the nuances of global travel, offering a service that goes beyond the ordinary. From
+                        navigating customs to ensuring a seamless transition, Pearson GTA Limo is your global companion
+                        in luxurious travel. Pearson GTA Limo aims to have our customers satisfied with our premium and
+                        efficient service that has all the capabilities of mesmerizing the customers with their charm.
+                        Our service adds to the style and elegance of the customers with our extravagant vehicles that
+                        are much more than any simple private vehicle.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">How We Works</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+
+                <!-- Safe Guarantee -->
+                <div class="text-center relative">
+                    <div
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-full flex items-center justify-center border-2 border-gray-100 shadow-lg">
+                        <i class="fas fa-shield-heart text-3xl text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SAFE GUARANTEE</h3>
+                    <p class="text-gray-600">At Pearson GTA Limo, professionalism and your safety are our top
+                        priorities.</p>
+                </div>
+
+                <!-- Fastest Pickups -->
+                <div class="text-center relative">
+                    <div
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-full flex items-center justify-center border-2 border-gray-100 shadow-lg">
+                        <i class="fas fa-car text-3xl text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">FASTEST PICKUPS</h3>
+                    <p class="text-gray-600">Our professional chauffeurs navigate the most efficient routes, ensuring
+                        your pickups promptly.</p>
+                </div>
+
+                <!-- Quick Rides -->
+                <div class="text-center relative">
+                    <div
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-full flex items-center justify-center border-2 border-gray-100 shadow-lg">
+                        <i class="fas fa-bridge text-3xl text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">QUICK RIDES</h3>
+                    <p class="text-gray-600">Combining speed with comfort, our quick rides redefine the efficiency of
+                        your travel experience.</p>
+                </div>
+
+                <!-- Cleared Drivers -->
+                <div class="text-center relative">
+                    <div
+                        class="w-24 h-24 mx-auto mb-6 bg-white rounded-full flex items-center justify-center border-2 border-gray-100 shadow-lg">
+                        <i class="fas fa-user-shield text-3xl text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CLEARED DRIVERS</h3>
+                    <p class="text-gray-600">Our chauffeurs undergo stringent background checks, ensuring peace of mind
+                        for passengers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="bg-gray-200 py-10 relative">
+            <h4 class="relative text-4xl font-bold text-center pb-5">Change the way you travel!</h2>
+                <div class="hidden md:block absolute top-30 left-0 w-full h-0.5">
+                    <div class="w-full h-full border-t-2 border-dashed border-black "></div>
+                </div>
+                <div class="grid grid-cols-12 gap-5 my-10 bg-white p-5 rounded m-3">
+                    <div class="col-span-4">
+                        <h4 class="text-2xl font-bold mb-3">Highly Skilled Staff that Make your Day in the Most
+                            Convenient Way
+                        </h4>
+                        <p class="mb-3">Some of the service providers charge more for a better experience. Some of them
+                            have chauffeurs that behave unethically. Most of the time, people have to leave in a hurry,
+                            or sometimes they are not in a mood to negotiate over small and useless matters. They are
+                            just tired of the situation or the hectic day spent. Some of them had to leave in a hurry as
+                            there was an incident and at times they had to deal with the chauffeurs that were not aware
+                            of the customers’ situation and behaved rudely.</p>
+                        <p class="mb-3">At Pearson GTA Limo, airport transfer service takes care of such moments for the
+                            customers. So, we have well-trained and highly skilled staff and chauffeurs. Their finesse
+                            in limo service and polite manners make them conquer the hearts of our worthy and essential
+                            customers.</p>
+                        <p class="mb-3">Limo from Pearson Airport service has been making its mark due to their initial
+                            step of training the chauffeurs and the other staff to conduct with the customers gently.
+                            One of the most crucial factors in attracting the customer is the codes of conduct that have
+                            been taught by the chauffeurs here to make the customers choose us whenever they are looking
+                            for an improved and sophisticated Pearson Airport transfer service to travel with.</p>
+                    </div>
+                    <div class="col-span-4">
+                        <img src="images\center-img.webp" alt="Airport Transfer" class="w-full h-full object-obtain">
+                    </div>
+                    <div class="col-span-4">
+                        <h4 class="text-2xl font-bold mb-3">Most Requested Airport Transfer Service
+                        </h4>
+                        <p class="mb-3">We have been the most requested limo service to Pearson Airport and other famous
+                            airports of Ontario. We also offer stylish and exclusive service to and from many local
+                            airports. We provide many airport transfer services, from YYZ to Niagara Falls service to
+                            other surrounding towns of Ontario. We are committed to getting you to the airport with
+                            style and comfort, where you need to go on schedule. We provide outstanding, safe, and
+                            dependable limo from Toronto airport to all of our clients at Pearson GTA Limo. Allow our
+                            Airport Transfer service to assist you in making your trip an exciting success! Our
+                            airport limos are the most convenient way to go to the airport.</p>
+                        <p class="mb-3">Our drivers will be courteous and responsive to your transportation needs, and
+                            our limos will be clean, secure, and comfortable. We will get to know you better as you use
+                            our limo services more frequently. When you book our airport transfer service, you’re
+                            booking
+                            the best. Our top priority is the best customer service and satisfaction.</p>
+                        <p class="mb-3">Contact us to reserve your airport transfers with us, or you can also make an
+                            online reservation by filling out a form. Our expert customer service staff of reps and
+                            drivers are standing by twenty-four hours a day, seven days a week, to serve and customize
+                            your airport transfer service to and from different towns in Ontario.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="relative py-16 bg-gradient-to-br from-[#072f5f] to-[#1a4980]">
+        <!-- Decorative pattern overlay -->
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%221%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <h2 class="text-3xl font-bold text-center mb-4 text-white">Frequently Asked Questions</h2>
+            <p class="text-center text-gray-300 mb-12">Find answers to common questions about our services</p>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">How do I book the Airport Transfer Service?
+                            </h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Booking with us is simple and convenient. Visit our website, navigate to the Airport
+                                Transfer section, provide your details, select your vehicle preference, and confirm your
+                                reservation. You can also reach out to our customer support for personalized assistance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">What types of vehicles are available for airport
+                                transfers?
+                            </h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Pearson GTA Limo offers a diverse fleet of premium vehicles, including sedans and SUVs,
+                                ensuring that you travel in style and comfort. You can choose a vehicle that suits your
+                                preferences and accommodates your group size.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">Do you offer airport transfers for international
+                                flights?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Absolutely! Our Airport Transfer Service is designed to cater to both domestic and
+                                international travelers. We understand the nuances of global travel and ensure a
+                                seamless experience, including assistance with customs and immigration if needed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">Can I schedule a Pearson GTA Limo airport transfer
+                                for someone else?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                Yes, you can. If you are arranging transportation for a colleague, friend, or family
+                                member, you can easily book on their behalf. Just provide their details during the
+                                reservation process, and we'll take care of the rest.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <button class="w-full px-8 py-6 flex justify-between items-center" onclick="toggleFAQ(this)">
+                        <div class="flex items-center gap-4">
+                            <span
+                                class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fas fa-question text-sm"></i>
+                            </span>
+                            <h3 class="text-lg font-medium text-left">What happens if my flight is delayed or arrives
+                                early?</h3>
+                        </div>
+                    </button>
+                    <div class="faq-content hidden">
+                        <div class="px-8 pb-6 pt-2 text-gray-600">
+                            <div class="border-t border-gray-100 pt-4">
+                                We monitor flight schedules in real-time, allowing us to adjust our services
+                                accordingly. If your flight is delayed, rest assured that our chauffeur will be there
+                                when you land. Similarly, if your flight arrives early, we'll be ready to welcome you.
+                                Our goal is to provide a stress-free and punctual experience.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with other FAQ items using the same structure... -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container">
+            <div>
+                <h3 class="text-4xl font-bold text-center mb-4">Our Luxury Fleet</h2>
+                    <p class="text-center">Expect only the finest late-model luxury sedans, SUVs, vans, stretches and
+                        motor coaches when traveling with Pearson GTA Limo. We maintain an immaculate fleet through
+                        comprehensive multi-point inspections and detailing on every vehicle before service. Our
+                        pristine interiors befit true luxury transportation fit for corporate accounts, special events
+                        and discriminating individuals.
+                    </p>
+            </div>
+            <div class="flex flex-wrap gap-3 py-10">
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\mercedes-benz.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Mercedes Benz</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\lincoln-MKT.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Lincoln MKT</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\town-car.webp" alt="Airport Transfer" class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Town Car</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\cadillac-suv.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Cadillac SUV</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\expendition-suv.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Expedition SUV</p>
+                </div>
+
+                <div class="w-[160px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\chevrolet.webp" alt="Airport Transfer" class="object-cover max-w-[145px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Chevrolet Suburban</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\ford-van.webp" alt="Airport Transfer" class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Ford Van</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\ford-van-2.webp" alt="Airport Transfer" class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Ford Van</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600 mt-7">
+                        <img src="images\mercedes-van.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Mercedes Sprinter Van</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600 mt-7">
+                        <img src="images\lincoin-limo.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Lincoln Stretch Limo</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\hummer-limo.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Hummer Limo</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\mkt-limo.webp" alt="Airport Transfer" class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">MKT Stretch Limo</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\party-van.webp" alt="Airport Transfer" class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Party Bus</p>
+                </div>
+
+                <div class="w-[150px] flex flex-col items-center justify-center">
+                    <div class="rounded-2xl border-2 border-blue-600">
+                        <img src="images\party-van-2.webp" alt="Airport Transfer"
+                            class="object-cover max-w-[140px] p-1">
+                    </div>
+                    <p class="text-center font-bold py-2">Party Bus</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Background Pattern -->
+        <div class="footer-pattern"></div>
+
+        <div class="container relative">
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <img src="images/logo-white.png" alt="Toplink Limo Logo" class="footer-logo">
+                    <p class="footer-description">Experience luxury transportation with unmatched professionalism across
+                        Toronto and the GTA.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-services-list">
+                        <li><a href="airport-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Airport
+                                Transfers</a></li>
+                        <li><a href="corporate-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Corporate
+                                Travel</a></li>
+                        <li><a href="hourly-limo-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Hourly
+                                Limo Service</a></li>
+                        <li><a href="private-car-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Private Car
+                                Service</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Special
+                                Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Our Location</h5>
+                                    <p class="contact-text">123 Business Ave, Toronto, ON M5V 2T6</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-phone-alt text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Call Us 24/7</h5>
+                                    <a href="tel:1-234-567-890" class="contact-link">1-234-567-890</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fas fa-envelope text-blue-400"></i></div>
+                                <div>
+                                    <h5 class="contact-label">Email Us</h5>
+                                    <a href="mailto:info@toplink.com" class="contact-link">info@toplink.com</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Business Hours -->
+                <div>
+                    <h4 class="footer-heading">Business Hours</h4>
+                    <ul class="hours-list">
+                        <li class="hours-item"><span>Monday - Friday:</span><span>24 Hours</span></li>
+                        <li class="hours-item"><span>Saturday:</span><span>24 Hours</span></li>
+                        <li class="hours-item"><span>Sunday:</span><span>24 Hours</span></li>
+                    </ul>
+                    <div class="hours-note">
+                        <p>Available for bookings 24/7, 365 days a year</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2024 Toplink Limo Services. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#" class="bottom-link">Privacy Policy</a>
+                        <a href="#" class="bottom-link">Terms of Service</a>
+                        <a href="#" class="bottom-link">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Custom JavaScript -->
+    <script>
+        function toggleFAQ(button) {
+            // Toggle the plus/minus icon
+            const icon = button.querySelector('i');
+            icon.classList.toggle('fa-plus');
+            icon.classList.toggle('fa-minus');
+            icon.classList.toggle('rotate-45');
+
+            // Toggle the content visibility
+            const content = button.nextElementSibling;
+            content.classList.toggle('hidden');
+            content.classList.toggle('show');
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
