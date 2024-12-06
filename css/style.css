@@ -359,6 +359,7 @@ body {
     transition: all 0.3s ease;
     padding: 0.5rem 0;
     margin-top: 0.5rem;
+    z-index: 1000;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -1138,29 +1139,8 @@ body {
 .hidden {
     display: none;
 }
+
 .visible {
-    display: block;
-}
-
-.step-trigger {
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.step-trigger:hover {
-    color: #2563eb;
-}
-
-.step-trigger.active {
-    color: #2563eb;
-    font-weight: 500;
-}
-
-.form-step {
-    display: none;
-}
-
-#step1 {
     display: block;
 }
 
