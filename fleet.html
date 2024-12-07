@@ -14,84 +14,96 @@
 </head>
 
 <body>
-    <!-- Header/Navigation -->
-    <div class="top-header">
-        <div class="container">
-            <div class="logo">
-                <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
-                <a href="index.html">Top Link Limo</a>
-            </div>
-            <div class="contact-section">
-                <a href="https://wa.me/1234567890" class="contact-button whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp Booking</span>
-                </a>
-                <a href="tel:1234567890" class="contact-button phone">
-                    <i class="fas fa-phone"></i>
-                    <span>1-234-567-890</span>
-                </a>
+    <div class="top-header-container relative" style="background-image: url('images/b7.webp');">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/65 to-black/30"></div>
+        <!-- Header/Navigation -->
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
+                    <a href="index.html" class="text-white text-xl font-bold z-10">Top Link Limo</a>
+                </div>
+                <div class="contact-section">
+                    <a href="https://wa.me/1234567890" class="contact-button whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Booking</span>
+                    </a>
+                    <a href="tel:1234567890" class="contact-button phone">
+                        <i class="fas fa-phone"></i>
+                        <span>1-234-567-890</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <header class="main-header">
-        <nav class="nav-container">
-            <div class="desktop-nav">
-                <a href="about.html" class="nav-link">About</a>
-                <div class="nav-item">
-                    <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
-                        <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
-                        <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
-                        <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
-                        <a href="group-transportation.html" class="dropdown-link">Group Transportation</a>
-                        <a href="special-event.html" class="dropdown-link">Special Event</a>
+        <header class="main-header">
+            <nav class="nav-container">
+                <div class="desktop-nav">
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
+                            <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
+                            <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
+                            <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
+                            <a href="group-transportation.html" class="dropdown-link">Group Transportation</a>
+                            <a href="special-event.html" class="dropdown-link">Special Event</a>
+                        </div>
                     </div>
+                    <a href="quote.html" class="nav-link">Rates</a>
+                    <a href="fleet.html" class="nav-link">Fleet </a>
+                    <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
+                    <a href="quote.html" class="nav-link">Get a Quote</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </div>
-                <a href="quote.html" class="nav-link">Rates</a>
-                <a href="fleet.html" class="nav-link">Fleet </a>
-                <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
-                <a href="quote.html" class="nav-link">Get a Quote</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="mobile-menu">
-                <button id="menu-toggle" class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu-container" class="mobile-menu-container">
-            <div class="mobile-nav">
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <div class="mobile-nav-item">
-                    <button class="mobile-dropdown-trigger">
-                        Services <i class="fas fa-chevron-down"></i>
+                <div class="mobile-menu">
+                    <button id="menu-toggle" class="menu-toggle">
+                        <i class="fas fa-bars"></i>
                     </button>
-                    <div class="mobile-dropdown-menu">
-                        <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
-                        <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
-                        <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
-                        <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
-                        <a href="group-transportation.html" class="mobile-nav-link">Group Transportation</a>
-                        <a href="special-event.html" class="mobile-nav-link">Special Event</a>
-                    </div>
                 </div>
-                <a href="quote.html" class="mobile-nav-link">Rates</a>
-                <a href="fleet.html" class="mobile-nav-link">Fleet</a>
-                <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
-                <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
-                <a href="contact.html" class="mobile-nav-link">Contact</a>
+            </nav>
+            <div id="mobile-menu-container" class="mobile-menu-container">
+                <div class="mobile-nav">
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                    <div class="mobile-nav-item">
+                        <button class="mobile-dropdown-trigger">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="mobile-dropdown-menu">
+                            <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
+                            <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
+                            <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
+                            <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
+                            <a href="group-transportation.html" class="mobile-nav-link">Group Transportation</a>
+                            <a href="special-event.html" class="mobile-nav-link">Special Event</a>
+                        </div>
+                    </div>
+                    <a href="quote.html" class="mobile-nav-link">Rates</a>
+                    <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+                    <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
+                    <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+        <!-- Hero Section -->
+        <section id="home" class="relative  flex items-center py-10">
+            <div class="container">
+                <h1 class="text-2xl md:text-4xl font-semibold text-white leading-tight mb-5">
+                    Fleet
+                </h1>
+            </div>
+        </section>
+    </div>
 
     <!-- Fleet Hero Section -->
-    <section class="relative bg-gradient-to-r from-[#072f5f] to-[#0a4487] text-white py-24">
+    <section class="relative py-20 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center">
                 <span class="text-blue-400 uppercase tracking-wider font-semibold">Our Luxury Fleet</span>
                 <h1 class="text-5xl font-bold mt-4 mb-6">Experience Luxury in Motion</h1>
-                <p class="text-xl text-gray-300">Choose from our diverse collection of meticulously maintained luxury
+                <p class="text-xl">Choose from our diverse collection of meticulously maintained luxury
                     vehicles, each offering unparalleled comfort and style.</p>
             </div>
         </div>
