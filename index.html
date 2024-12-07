@@ -15,123 +15,108 @@
 
 <body>
     <!-- Header/Navigation -->
-    <div class="top-header">
-        <div class="container">
-            <div class="logo">
-                <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
-                <a href="index.html">Top Link Limo</a>
-            </div>
-            <div class="contact-section">
-                <a href="https://wa.me/1234567890" class="contact-button whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    <span>WhatsApp Booking</span>
-                </a>
-                <a href="tel:1234567890" class="contact-button phone">
-                    <i class="fas fa-phone"></i>
-                    <span>1-234-567-890</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <header class="main-header">
-        <nav class="nav-container">
-            <div class="desktop-nav">
-                <a href="about.html" class="nav-link">About</a>
-                <div class="nav-item">
-                    <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-menu">
-                        <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
-                        <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
-                        <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
-                        <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
-                        <a href="group-transportation.html" class="dropdown-link">Group Transportation</a>
-                        <a href="special-event.html" class="dropdown-link">Special Event</a>
-                    </div>
+    <div class="top-header-container relative min-h-screen" style="background-image: url('images/h6.png'); object-fit: obtain;">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/65 to-black/30"></div>
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <!-- <img src="images/logo.png" alt="Top Link Limo" class="logo-image"> -->
+                    <a href="index.html" class="text-white text-xl font-bold z-10">Top Link Limo</a>
                 </div>
-                <a href="quote.html" class="nav-link">Rates</a>
-                <a href="fleet.html" class="nav-link">Fleet </a>
-                <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
-                <a href="quote.html" class="nav-link">Get a Quote</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-            <div class="mobile-menu">
-                <button id="menu-toggle" class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </nav>
-        <div id="mobile-menu-container" class="mobile-menu-container">
-            <div class="mobile-nav">
-                <a href="about.html" class="mobile-nav-link">About</a>
-                <div class="mobile-nav-item">
-                    <button class="mobile-dropdown-trigger">
-                        Services <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="mobile-dropdown-menu">
-                        <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
-                        <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
-                        <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
-                        <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
-                        <a href="group-transportation.html" class="mobile-nav-link">Group Transportation</a>
-                        <a href="special-event.html" class="mobile-nav-link">Special Event</a>
-                    </div>
-                </div>
-                <a href="quote.html" class="mobile-nav-link">Rates</a>
-                <a href="fleet.html" class="mobile-nav-link">Fleet</a>
-                <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
-                <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
-                <a href="contact.html" class="mobile-nav-link">Contact</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center">
-        <!-- Video/Image Background -->
-        <div class="absolute inset-0 z-0">
-            <!-- Video Background Option -->
-            <video autoplay muted loop playsinline class="object-cover w-full h-full">
-                <source src="videos/luxury-limo.mp4" type="video/mp4">
-            </video>
-
-            <!-- Fallback Image Background (if video doesn't load) -->
-            <!-- <img src="images/hero-bg.jpg" alt="Luxury Limousine" class="object-cover w-full h-full"> -->
-
-            <!-- Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/75 to-black/30"></div>
-        </div>
-
-        <div class="container relative z-10">
-            <div class="max-w-2xl">
-                <span class="inline-block text-blue-400 text-lg font-medium mb-4">
-                    TORONTO'S PREMIER LIMOUSINE SERVICE
-                </span>
-
-                <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-                    Luxury in <span class="text-blue-400">Motion</span>
-                </h1>
-
-                <p class="text-xl text-gray-300 mb-8">
-                    Experience exceptional chauffeur service for your special moments.
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="reservation.html"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all inline-flex items-center justify-center group">
-                        <span class="text-lg font-medium">Book Your Ride</span>
-                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                <div class="contact-section z-10">
+                    <a href="https://wa.me/1234567890" class="contact-button whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Booking</span>
+                    </a>
+                    <a href="tel:1234567890" class="contact-button phone">
+                        <i class="fas fa-phone"></i>
+                        <span>1-234-567-890</span>
                     </a>
                 </div>
             </div>
-        </div>
 
-        <!-- Scroll Indicator -->
-        <!-- <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <a href="#services" class="text-white/50 hover:text-white transition-colors">
-                <i class="fas fa-chevron-down text-2xl"></i>
-            </a>
-        </div> -->
-    </section>
+        </div>
+        <header class="main-header">
+            <nav class="nav-container">
+                <div class="desktop-nav z-10 text-white">
+                    <a href="about.html" class="nav-link">About</a>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="airport-service.html" class="dropdown-link">Airport Transfer</a>
+                            <a href="corporate-service.html" class="dropdown-link">Corporate Service</a>
+                            <a href="hourly-limo-service.html" class="dropdown-link">Hourly Limo Service</a>
+                            <a href="private-car-service.html" class="dropdown-link">Private Car Service</a>
+                            <a href="group-transportation.html" class="dropdown-link">Group Transportation</a>
+                            <a href="special-event.html" class="dropdown-link">Special Event</a>
+                        </div>
+                    </div>
+                    <a href="quote.html" class="nav-link">Rates</a>
+                    <a href="fleet.html" class="nav-link">Fleet </a>
+                    <a href="reservation.html" class="nav-link highlight">Reserve Online</a>
+                    <a href="quote.html" class="nav-link">Get a Quote</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="mobile-menu">
+                    <button id="menu-toggle" class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <div id="mobile-menu-container" class="mobile-menu-container">
+                <div class="mobile-nav">
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                    <div class="mobile-nav-item">
+                        <button class="mobile-dropdown-trigger">
+                            Services <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="mobile-dropdown-menu">
+                            <a href="airport-service.html" class="mobile-nav-link">Airport Transfer</a>
+                            <a href="corporate-service.html" class="mobile-nav-link">Corporate Service</a>
+                            <a href="hourly-limo-service.html" class="mobile-nav-link">Hourly Limo Service</a>
+                            <a href="private-car-service.html" class="mobile-nav-link">Private Car Service</a>
+                            <a href="group-transportation.html" class="mobile-nav-link">Group Transportation</a>
+                            <a href="special-event.html" class="mobile-nav-link">Special Event</a>
+                        </div>
+                    </div>
+                    <a href="quote.html" class="mobile-nav-link">Rates</a>
+                    <a href="fleet.html" class="mobile-nav-link">Fleet</a>
+                    <a href="reservation.html" class="mobile-nav-link highlight">Reserve Online</a>
+                    <a href="quote.html" class="mobile-nav-link">Get a Quote</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="relative  flex items-center py-20">
+            <div class="container relative">
+                <div class="max-w-2xl">
+                    <span class="inline-block text-blue-400 text-lg font-medium mb-4">
+                        TORONTO'S PREMIER LIMOUSINE SERVICE
+                    </span>
+
+                    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+                        Luxury in <span class="text-blue-400">Motion</span>
+                    </h1>
+
+                    <p class="text-xl text-gray-300 mb-8">
+                        Experience exceptional chauffeur service for your special moments.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="reservation.html"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all inline-flex items-center justify-center group">
+                            <span class="text-lg font-medium">Book Your Ride</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- About Intro Section -->
     <section class="py-20">
@@ -141,7 +126,8 @@
                 <div class="space-y-4">
                     <h2 class="text-3xl font-semibold text-gray-900">Experience Luxury Transportation</h2>
                     <p class="text-md text-gray-700">
-                        At Toplink Limo, we redefine luxury transportation in Toronto and the surrounding areas. With
+                        At Toplink Limo, we redefine luxury transportation in Toronto and the surrounding areas.
+                        With
                         our fleet of meticulously maintained vehicles and professional chauffeurs, we ensure every
                         journey is memorable.
                     </p>
@@ -185,8 +171,10 @@
                     <img src="images/thumb-airport-limousine-service.jpg" alt="Airport Limo"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Airport Limousine Service</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Our airport limo service is designed to make your travel
-                        experience as smooth and stress-free as possible. Whether you're flying in or out of Toronto,
+                    <p class="text-md text-gray-700 p-3 mb-5">Our airport limo service is designed to make your
+                        travel
+                        experience as smooth and stress-free as possible. Whether you're flying in or out of
+                        Toronto,
                         our professional chauffeurs will ensure you arrive at the airport in style and on time.</p>
                 </div>
 
@@ -194,8 +182,10 @@
                     <img src="images/thumb-wedding-limousine-service.jpg" alt="Airport Limo"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Wedding Limousine Service</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Our airport limo service is designed to make your travel
-                        experience as smooth and stress-free as possible. Whether you're flying in or out of Toronto,
+                    <p class="text-md text-gray-700 p-3 mb-5">Our airport limo service is designed to make your
+                        travel
+                        experience as smooth and stress-free as possible. Whether you're flying in or out of
+                        Toronto,
                         our professional chauffeurs will ensure you arrive at the airport in style and on time.</p>
                 </div>
 
@@ -212,7 +202,8 @@
                     <img src="images/thumb-wine-tour-service.jpg" alt="Wine Tour Limousine"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Wine Tour Limousine</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Experience the finest wineries in Niagara region with our
+                    <p class="text-md text-gray-700 p-3 mb-5">Experience the finest wineries in Niagara region with
+                        our
                         luxury wine tour service. Our experienced chauffeurs will guide you through a sophisticated
                         journey of wine tasting while ensuring your comfort and safety throughout the tour.</p>
                 </div>
@@ -230,7 +221,8 @@
                     <img src="images/thumb-bachelor-bachelorette-party-limo-service.jpg" alt="Bachelor Party Limousine"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Bachelor/Bachelorette Party</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Celebrate your last night of freedom in style! Our party
+                    <p class="text-md text-gray-700 p-3 mb-5">Celebrate your last night of freedom in style! Our
+                        party
                         limos come equipped with premium sound systems and ambient lighting, perfect for creating an
                         unforgettable pre-wedding celebration with your closest friends.</p>
                 </div>
@@ -240,8 +232,10 @@
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Corporate Travel Service</h4>
                     <p class="text-md text-gray-700 p-3 mb-5">Make a lasting impression with our executive
-                        transportation solutions. Perfect for business meetings, corporate events, or client pickups,
-                        our professional service ensures punctuality and comfort for all your business travel needs.</p>
+                        transportation solutions. Perfect for business meetings, corporate events, or client
+                        pickups,
+                        our professional service ensures punctuality and comfort for all your business travel needs.
+                    </p>
                 </div>
 
                 <div class="service-card">
@@ -249,7 +243,8 @@
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Casino Limousine Service</h4>
                     <p class="text-md text-gray-700 p-3 mb-5">Start your gaming adventure in luxury with our casino
-                        transportation service. We provide reliable round-trip service to all major casinos, ensuring
+                        transportation service. We provide reliable round-trip service to all major casinos,
+                        ensuring
                         you can focus on entertainment while we handle the driving.</p>
                 </div>
 
@@ -258,7 +253,8 @@
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Special Event Transportation</h4>
                     <p class="text-md text-gray-700 p-3 mb-5">From concerts and sporting events to anniversary
-                        celebrations, our special event service adds an extra touch of luxury to any occasion. Let us
+                        celebrations, our special event service adds an extra touch of luxury to any occasion. Let
+                        us
                         enhance your special moments with sophisticated transportation.</p>
                 </div>
 
@@ -267,7 +263,8 @@
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Group Transportation</h4>
                     <p class="text-md text-gray-700 p-3 mb-5">Coordinating group travel made easy with our fleet of
-                        luxury vehicles. Whether it's a corporate retreat or family reunion, we can accommodate groups
+                        luxury vehicles. Whether it's a corporate retreat or family reunion, we can accommodate
+                        groups
                         of any size while maintaining our high standards of comfort and service.</p>
                 </div>
 
@@ -275,7 +272,8 @@
                     <img src="images/thumb-prom-graduation-limousine.jpg" alt="Prom Limousine"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Prom & Graduation Limo</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Make your milestone moments unforgettable with our luxury
+                    <p class="text-md text-gray-700 p-3 mb-5">Make your milestone moments unforgettable with our
+                        luxury
                         prom and graduation service. We provide safe, reliable, and stylish transportation to ensure
                         your celebration is both memorable and worry-free.</p>
                 </div>
@@ -284,8 +282,10 @@
                     <img src="images/thumb-sightseeing-tour-service.jpg" alt="Sightseeing Tours"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Sightseeing Tours</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Discover Toronto's landmarks in comfort and style with our
-                        customized sightseeing tours. Our knowledgeable chauffeurs double as guides, providing insights
+                    <p class="text-md text-gray-700 p-3 mb-5">Discover Toronto's landmarks in comfort and style with
+                        our
+                        customized sightseeing tours. Our knowledgeable chauffeurs double as guides, providing
+                        insights
                         about the city while you relax in luxury.</p>
                 </div>
 
@@ -293,7 +293,8 @@
                     <img src="images/thumb-concert-sporting-event-limo-service.jpg" alt="Sightseeing Tours"
                         class="service-image rounded-sm p-1">
                     <h4 class="text-2xl font-bold text-left pt-5 px-3">Concert/Sporting Event Limo Service</h4>
-                    <p class="text-md text-gray-700 p-3 mb-5">Arrive in style at your next concert or sporting event.
+                    <p class="text-md text-gray-700 p-3 mb-5">Arrive in style at your next concert or sporting
+                        event.
                         Our chauffeur-driven limousines provide convenient, luxury transportation, ensuring you can
                         enjoy your event worry-free.</p>
                 </div>
@@ -313,7 +314,8 @@
                             <span class="text-blue-400 uppercase tracking-wider">Premium Service</span>
                         </div>
                         <h3 class="text-4xl font-bold leading-tight">Elevate Your Travel Experience</h3>
-                        <p class="text-lg opacity-90">Experience the perfect blend of luxury, comfort, and professional
+                        <p class="text-lg opacity-90">Experience the perfect blend of luxury, comfort, and
+                            professional
                             service with Toronto's premier chauffeur service.</p>
 
                         <div class="flex flex-col sm:flex-row gap-4 pt-4">
@@ -412,13 +414,17 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                         </div>
-                                        <p class="text-gray-600 mb-4">"Our wedding day was absolutely perfect thanks to
+                                        <p class="text-gray-600 mb-4">"Our wedding day was absolutely perfect thanks
+                                            to
                                             Top Link Limo! The chauffeur was professional, punctual, and the stretch
-                                            limousine was immaculate. The red carpet service made us feel like royalty.
-                                            From the moment we were picked up to the final drop-off, every detail was
+                                            limousine was immaculate. The red carpet service made us feel like
+                                            royalty.
+                                            From the moment we were picked up to the final drop-off, every detail
+                                            was
                                             handled with exceptional care. The champagne service and elegant decor
                                             inside the limo added that extra special touch to our celebration. We
-                                            couldn't have asked for a better transportation experience on our special
+                                            couldn't have asked for a better transportation experience on our
+                                            special
                                             day."</p>
                                     </div>
                                     <div class="mt-auto">
@@ -441,13 +447,19 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                         </div>
-                                        <p class="text-gray-600 mb-4">"As a frequent business traveler, reliability and
-                                            professionalism are crucial. Top Link Limo consistently exceeds expectations
-                                            with their executive service. Their attention to detail is outstanding. The
-                                            drivers are always well-versed in the best routes, avoiding traffic delays,
+                                        <p class="text-gray-600 mb-4">"As a frequent business traveler, reliability
+                                            and
+                                            professionalism are crucial. Top Link Limo consistently exceeds
+                                            expectations
+                                            with their executive service. Their attention to detail is outstanding.
+                                            The
+                                            drivers are always well-versed in the best routes, avoiding traffic
+                                            delays,
                                             and the vehicles are equipped with mobile offices, including WiFi and
-                                            charging stations. I've been using their services for over three years now,
-                                            and they've never disappointed. Whether it's early morning airport runs or
+                                            charging stations. I've been using their services for over three years
+                                            now,
+                                            and they've never disappointed. Whether it's early morning airport runs
+                                            or
                                             late-night pickups, they're always punctual and professional."</p>
                                     </div>
                                     <div class="mt-auto">
@@ -473,10 +485,13 @@
                                         <p class="text-gray-600 mb-4">"Our wine tour experience was exceptional! The
                                             chauffeur was incredibly knowledgeable about the Niagara region and made
                                             excellent recommendations. The luxury SUV was comfortable and elegant,
-                                            perfect for our group of six. The driver shared fascinating details about
-                                            each winery we visited and even suggested a wonderful restaurant for lunch.
+                                            perfect for our group of six. The driver shared fascinating details
+                                            about
+                                            each winery we visited and even suggested a wonderful restaurant for
+                                            lunch.
                                             The vehicle was stocked with water and snacks, and the temperature was
-                                            always perfect. The entire day was seamless, allowing us to fully enjoy the
+                                            always perfect. The entire day was seamless, allowing us to fully enjoy
+                                            the
                                             wine tasting experience without worrying about transportation."</p>
                                     </div>
                                     <div class="mt-auto">
@@ -500,11 +515,14 @@
                                             </div>
                                         </div>
                                         <p class="text-gray-600 mb-4">"Booked their party bus for my daughter's prom
-                                            night, and it was the highlight of their evening! The vehicle was stunning,
-                                            equipped with an amazing sound system and ambient lighting. The driver was
+                                            night, and it was the highlight of their evening! The vehicle was
+                                            stunning,
+                                            equipped with an amazing sound system and ambient lighting. The driver
+                                            was
                                             professional and patient with the excited teenagers, ensuring everyone's
                                             safety while maintaining a fun atmosphere. The LED lighting and premium
-                                            sound system created the perfect party environment. The spacious interior
+                                            sound system created the perfect party environment. The spacious
+                                            interior
                                             comfortably accommodated all 12 students, and the built-in coolers kept
                                             their refreshments cold throughout the night."</p>
                                     </div>
@@ -528,12 +546,18 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                         </div>
-                                        <p class="text-gray-600 mb-4">"Outstanding airport transfer service! Despite my
-                                            flight being delayed by three hours, the chauffeur waited patiently and kept
-                                            in constant communication. The luxury sedan was immaculate, with comfortable
-                                            leather seats and plenty of space for my luggage. The driver helped with my
-                                            bags and even had a phone charger available when my device was running low.
-                                            The smooth ride and professional service made a long, stressful travel day
+                                        <p class="text-gray-600 mb-4">"Outstanding airport transfer service! Despite
+                                            my
+                                            flight being delayed by three hours, the chauffeur waited patiently and
+                                            kept
+                                            in constant communication. The luxury sedan was immaculate, with
+                                            comfortable
+                                            leather seats and plenty of space for my luggage. The driver helped with
+                                            my
+                                            bags and even had a phone charger available when my device was running
+                                            low.
+                                            The smooth ride and professional service made a long, stressful travel
+                                            day
                                             much more bearable. I particularly appreciated the complimentary bottled
                                             water and newspapers available in the vehicle."</p>
                                     </div>
@@ -579,7 +603,8 @@
                     </div>
                     <h4 class="text-2xl font-bold text-left mb-3">Trust Our Exceptional Track Record</h4>
                     <p class="text-md text-gray-700">With Toplink Limo, expect nothing but excellent service and
-                        professional chauffeurs - our glowing customer reviews and industry awards are a testament to
+                        professional chauffeurs - our glowing customer reviews and industry awards are a testament
+                        to
                         our commitment to quality!</p>
                     <ul class="mt-4 space-y-2">
                         <li class="flex items-center">
@@ -600,7 +625,8 @@
                     </div>
                     <h4 class="text-2xl font-bold text-left mb-3">Tailored To Your Needs</h4>
                     <p class="text-md text-gray-700">Every Toplink Limo journey is a unique experience, tailored to
-                        exceed expectations. Make your trip truly yours, with personalized service that puts you first.
+                        exceed expectations. Make your trip truly yours, with personalized service that puts you
+                        first.
                     </p>
                     <ul class="mt-4 space-y-2">
                         <li class="flex items-center">
@@ -760,7 +786,8 @@
                         </div>
                     </div>
                     <p class="text-gray-600">"Exceptional service! The chauffeur was punctual, professional, and the
-                        vehicle was immaculate. Will definitely use again for all my luxury transportation needs."</p>
+                        vehicle was immaculate. Will definitely use again for all my luxury transportation needs."
+                    </p>
                 </div>
 
                 <!-- Review Card 2 -->
@@ -779,7 +806,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Used their service for my wedding and it was perfect! The driver was so
+                    <p class="text-gray-600">"Used their service for my wedding and it was perfect! The driver was
+                        so
                         accommodating and made sure everything went smoothly. Highly recommend!"</p>
                 </div>
 
@@ -799,7 +827,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Top-notch airport transfer service. The driver tracked my flight and was
+                    <p class="text-gray-600">"Top-notch airport transfer service. The driver tracked my flight and
+                        was
                         waiting when I arrived despite the delay. Excellent communication and service."</p>
                 </div>
             </div>
@@ -826,7 +855,8 @@
                 <!-- Company Info -->
                 <div class="footer-company">
                     <img src="images/logo-white.png" alt="Toplink Limo Logo" class="footer-logo">
-                    <p class="footer-description">Experience luxury transportation with unmatched professionalism across
+                    <p class="footer-description">Experience luxury transportation with unmatched professionalism
+                        across
                         Toronto and the GTA.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
