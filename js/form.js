@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (index + 1 === activeStep) {
                 // Active step
-                trigger.classList.add('border-b-2', 'border-blue-600', 'font-medium', 'text-blue-600');
+                trigger.classList.add('border-b-2', 'border-[#0c52a6]', 'font-medium', 'text-[#0c52a6]');
             } else {
                 // Inactive step
                 trigger.classList.add('text-gray-500');
