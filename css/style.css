@@ -10,13 +10,38 @@ body {
     line-height: 1.6;
     padding-top: 0;
 }
+.primary-button {
+    color: white;
+    font-weight: 300;
+    background-color: #0c52a6;
+    padding: 3px 3px;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+    height: 45px;
+    text-align: center;
 
-/* Hero Section */
-.hero-section {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                url('../images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    min-height: 100vh; */
+}
+.primary-button:hover {
+    color: white;
+    background-color: #093a77;
+    transition: background-color 0.3s ease-in-out;
+}
+.secondary-button {
+    color: #0c52a6;
+    font-weight: 300;
+    background-color: white;
+    padding: 3px 3px;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+    height: 45px;
+    text-align: center;
+    border: 1px solid;
+    border-color: #0c52a6;
+}
+.secondary-button:hover {
+    color: white;
+    background-color: #0c52a6;
+    transition: background-color 0.3s ease-in-out;
 }
 
 /* Navigation */
@@ -136,20 +161,21 @@ body {
 }
 
 .fleet-category-btn {
+    color: #0c52a6;
     padding: 0.5rem 1.5rem;
-    border: 2px solid #072f5f;
+    border: 2px solid #0c52a6;
     border-radius: 0.25rem;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .fleet-category-btn:hover {
-    background-color: #072f5f;
+    background-color: #093a77;
     color: white;
 }
 
 .fleet-category-btn.active {
-    background-color: #072f5f;
+    background-color: #0c52a6;
     color: white;
 }
 
@@ -210,6 +236,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -247,15 +274,18 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 4rem;  /* 32px */
-    padding-right: 4rem; /* 32px */
+    padding-left: 4rem;
+    /* 32px */
+    padding-right: 4rem;
+    /* 32px */
     /* max-width: 1280px;    */
 }
 
 /* Responsive padding adjustments */
 @media (max-width: 768px) {
     .container {
-        padding-left: 1rem;  /* 16px for mobile */
+        padding-left: 1rem;
+        /* 16px for mobile */
         padding-right: 1rem;
     }
 }
@@ -328,7 +358,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #2563eb;
+    color: #093a77;
 }
 
 .dropdown-trigger {
@@ -389,7 +419,7 @@ body {
 
 .highlight {
     color: white;
-    background-color: #2563eb;
+    background-color: #0c52a6;
     padding: 0.75rem 1.25rem;
     margin: 0 0.5rem;
     border-radius: 50px;
@@ -397,7 +427,7 @@ body {
 }
 
 .highlight:hover {
-    background-color: #1d4ed8;
+    background-color: #093a77;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
@@ -487,11 +517,11 @@ body {
     .desktop-nav {
         display: flex;
     }
-    
+
     .mobile-menu {
         display: none;
     }
-    
+
     .mobile-menu-container {
         display: none;
     }
@@ -510,10 +540,21 @@ body {
 }
 
 /* Stagger animation for dropdown items */
-.dropdown-menu .dropdown-link:nth-child(1) { transition-delay: 0.1s; }
-.dropdown-menu .dropdown-link:nth-child(2) { transition-delay: 0.15s; }
-.dropdown-menu .dropdown-link:nth-child(3) { transition-delay: 0.2s; }
-.dropdown-menu .dropdown-link:nth-child(4) { transition-delay: 0.25s; }
+.dropdown-menu .dropdown-link:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.dropdown-menu .dropdown-link:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.dropdown-menu .dropdown-link:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.dropdown-menu .dropdown-link:nth-child(4) {
+    transition-delay: 0.25s;
+}
 
 /* Top Header Styles */
 .top-header {
@@ -579,12 +620,12 @@ body {
 
 /* Phone Button */
 .phone {
-    background-color: #2563eb;
+    background-color: #0c52a6;
     color: white;
 }
 
 .phone:hover {
-    background-color: #1d4ed8;
+    background-color: #093a77;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
@@ -601,7 +642,8 @@ body {
     }
 
     .contact-button span {
-        display: none; /* Hide text on mobile, show only icons */
+        display: none;
+        /* Hide text on mobile, show only icons */
     }
 
     .contact-button i {
@@ -624,7 +666,7 @@ body {
     .main-header {
         position: relative;
     }
-    
+
     body {
         padding-top: 0;
     }
@@ -654,9 +696,9 @@ body {
 }
 
 .fleet-link {
-    color: #2563eb; /* text-blue-600 */
-    font-size: 1rem; /* text-xl */
-    padding: 1px 3px; /* py-2 px-4 */
+    color: #0c52a6;
+    font-size: 1rem;
+    padding: 1px 3px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -685,7 +727,8 @@ body {
 
 .testimonial-content {
     padding: 2rem;
-    min-height: 300px; /* Increased height for more content */
+    min-height: 300px;
+    /* Increased height for more content */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -841,7 +884,8 @@ body {
     margin-bottom: 0.25rem;
 }
 
-.contact-text, .contact-link {
+.contact-text,
+.contact-link {
     color: #9CA3AF;
 }
 
@@ -1082,6 +1126,7 @@ body {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1148,3 +1193,70 @@ body {
     display: block;
 }
 
+/* Vehicle Card Styles */
+.vehicle-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    width: 260px;
+    height: 320px;
+    transition: box-shadow 0.3s ease;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.vehicle-card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.vehicle-image-container {
+    background-color: #f3f4f6;
+    overflow: hidden;
+    padding: 0.5rem;
+    height: 130px;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.vehicle-details {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.vehicle-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.vehicle-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.vehicle-spec-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.vehicle-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.vehicle-button-container {
+    margin-top: 1rem;
+}
