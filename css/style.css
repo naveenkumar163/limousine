@@ -346,7 +346,7 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: #d9d9d9;
     font-weight: 550;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
@@ -358,7 +358,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #093a77;
+    color: white;
 }
 
 .dropdown-trigger {
