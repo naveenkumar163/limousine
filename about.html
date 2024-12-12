@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="top-header-container relative" style="background-image: url('images/b7.webp');">
+    <div class="top-header-container relative" style="background-image: url('images/b7.webp'); object-fit: cover; background-size: cover; background-position: center;">
         <!-- Gradient Overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/65 to-black/45"></div>
         <!-- Header/Navigation -->
@@ -330,7 +330,7 @@
                         limo.
                     </p>
             </div>
-            <div class="flex flex-wrap gap-3 py-10">
+            <div class="flex flex-wrap justify-center gap-3 py-10">
                 <div class="w-[150px] flex flex-col items-center justify-center">
                     <div class="rounded-2xl border-2 border-[#0c52a6]">
                         <img src="images\mercedes-benz.webp" alt="Airport Transfer"
@@ -445,15 +445,15 @@
     <footer class="footer">
         <!-- Background Pattern -->
         <div class="footer-pattern"></div>
-
         <div class="container relative">
             <!-- Main Footer Content -->
             <div class="footer-grid">
                 <!-- Company Info -->
                 <div class="footer-company">
-                    <img src="images/logo-white.png" alt="Toplink Limo Logo" class="footer-logo">
-                    <p class="footer-description">Experience luxury transportation with unmatched professionalism across
-                        Toronto and the GTA.</p>
+                    <a href="index.html" class="text-white text-xl font-bold z-10">Link Limo</a>
+                    <!-- <img src="images/logo-white.png" alt="Toplink Limo Logo" class="footer-logo"> -->
+                    <p class="footer-description">Experience luxury transportation with unmatched professionalism
+                        across Toronto and the GTA.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -466,15 +466,20 @@
                 <div>
                     <h4 class="footer-heading">Our Services</h4>
                     <ul class="footer-services-list">
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Airport
+                        <li><a href="airport-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Airport
                                 Transfers</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Corporate
+                        <li><a href="corporate-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Corporate
                                 Travel</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Wedding
-                                Limo</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Wine
-                                Tours</a></li>
-                        <li><a href="#" class="footer-link"><i class="fas fa-chevron-right icon-arrow"></i>Special
+                        <li><a href="hourly-limo-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Hourly
+                                Limo Service</a></li>
+                        <li><a href="private-car-service.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Private Car
+                                Service</a></li>
+                        <li><a href="special-event.html" class="footer-link"><i
+                                    class="fas fa-chevron-right icon-arrow"></i>Special
                                 Events</a></li>
                     </ul>
                 </div>
@@ -506,7 +511,7 @@
                                 <div class="contact-icon"><i class="fas fa-envelope text-blue-400"></i></div>
                                 <div>
                                     <h5 class="contact-label">Email Us</h5>
-                                    <a href="mailto:info@toplink.com" class="contact-link">info@toplink.com</a>
+                                    <a href="mailto:info@toplink.com" class="contact-link">info@abc.com</a>
                                 </div>
                             </div>
                         </li>
